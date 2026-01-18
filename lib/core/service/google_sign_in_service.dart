@@ -4,6 +4,7 @@ import 'package:google_sign_in/google_sign_in.dart';
 class GoogleSignInService {
 
   final GoogleSignIn _googleSignIn = GoogleSignIn(
+    clientId: "326383307803-6v230vhov94qj0u75a3gp4549ekiovmn.apps.googleusercontent.com",
     scopes: [
       'https://www.googleapis.com/auth/drive.readonly',
     ],

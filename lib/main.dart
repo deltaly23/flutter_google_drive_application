@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_google_drive_application/core/service/google_sign_in_service.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
 
-void main() {
+  await dotenv.load(fileName: ".env");
+
   runApp(const MyApp());
 }
 
